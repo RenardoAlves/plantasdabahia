@@ -285,3 +285,85 @@
 .whatsapp-menu:hover {
   background-color: #1ebe5b;
 }
+
+@media (max-width: 768px) {
+  /* Header e navegação */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  nav a, .whatsapp-menu {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .dropdown-content a {
+    padding-left: 20px;
+    background-color: #333;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Layout principal */
+  main {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .product-info {
+    flex: none;
+    text-align: left;
+  }
+
+  /* Rodapé */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .footer-right {
+    justify-content: flex-start;
+  }
+
+  /* Reduz tamanho dos ícones sociais */
+  .social img,
+  .footer-right img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Botões WhatsApp */
+  .whatsapp-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact a {
+    display: flex;
+    justify-content: center;
+  }
+}

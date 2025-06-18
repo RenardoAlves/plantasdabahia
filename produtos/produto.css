@@ -269,21 +269,23 @@
 }
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product-info {
+      text-align: center;
+  }
+
+  nav {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
   }
 
   .logo {
     margin-bottom: 10px;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    width: 100%;
   }
 
   nav a, .whatsapp-menu {

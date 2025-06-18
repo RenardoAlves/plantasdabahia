@@ -219,24 +219,6 @@
     height: 24px;
   }
 
-  /* ----------- RESPONSIVO ----------- */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .product-info {
-      text-align: center;
-    }
-
-    nav {
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 10px;
-    }
-  }
-
   .whatsapp-button {
   display: flex;
   align-items: center;
@@ -288,6 +270,21 @@
 
 @media (max-width: 768px) {
   /* Header e navegação */
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product-info {
+      text-align: center;
+  }
+
+  nav {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+  }
+  
   header {
     flex-direction: column;
     align-items: flex-start;

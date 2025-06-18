@@ -304,6 +304,11 @@
     text-align: center;
   }
 
+  .whatsapp-button {
+    width: 100%;
+    justify-content: center;
+  }
+
   footer {
     flex-direction: column;
     text-align: center;

@@ -52,6 +52,20 @@ h2 {
   p {
     font-size: 1em;
   }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
 }
 
   header {

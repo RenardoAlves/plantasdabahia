@@ -243,6 +243,20 @@
       gap: 10px;
       margin-top: 10px;
     }
+
+    footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    }
+
+    .footer-right {
+    justify-content: center;
+    }
+
+    .social {
+    justify-content: center;
+    }
   }
 
   .whatsapp-menu {

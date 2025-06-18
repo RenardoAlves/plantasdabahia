@@ -269,57 +269,34 @@
 }
 
 @media (max-width: 768px) {
-  /* Header e navegação */
-  .container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .product-info {
-      text-align: center;
-  }
-
-  nav {
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 10px;
-  }
-  
   header {
     flex-direction: column;
     align-items: flex-start;
+    padding: 15px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
   }
 
   nav {
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    margin-top: 15px;
     gap: 10px;
+    width: 100%;
   }
 
   nav a, .whatsapp-menu {
     width: 100%;
-    text-align: left;
     padding: 10px 0;
   }
 
   .dropdown-content {
     position: static;
     box-shadow: none;
-    background-color: transparent;
+    width: 100%;
   }
 
-  .dropdown-content a {
-    padding-left: 20px;
-    background-color: #333;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /* Layout principal */
   main {
     padding: 20px;
     margin: 20px 10px;
@@ -327,40 +304,44 @@
 
   .container {
     flex-direction: column;
-    align-items: stretch;
+    gap: 20px;
+    align-items: center;
   }
 
-  .product-info {
-    flex: none;
-    text-align: left;
+  .product-info, .product-image {
+    width: 100%;
+    text-align: center;
   }
 
-  /* Rodapé */
   footer {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
+    text-align: center;
+    gap: 10px;
   }
 
   .footer-right {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
-  /* Reduz tamanho dos ícones sociais */
-  .social img,
-  .footer-right img {
-    width: 20px;
-    height: 20px;
-  }
-
-  /* Botões WhatsApp */
   .whatsapp-button {
     width: 100%;
     justify-content: center;
   }
 
-  .contact a {
-    display: flex;
+  .social {
     justify-content: center;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown > a::after {
+    content: ' ▼';
+  }
+
+  .dropdown > a:focus + .dropdown-content,
+  .dropdown-content:hover {
+    display: block;
   }
 }

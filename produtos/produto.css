@@ -333,17 +333,4 @@
   .social {
     justify-content: center;
   }
-
-  .dropdown:hover .dropdown-content {
-    display: none;
-  }
-
-  .dropdown > a::after {
-    content: ' ▼';
-  }
-
-  .dropdown > a:focus + .dropdown-content,
-  .dropdown-content:hover {
-    display: block;
-  }
 }
